@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="myLoad()" style="margin: 0;">
+    <div id="loader">
+     
+        <b>Welcome to Online Quiz Application</b><br /><br />
+        Hello, dear friend! Would you like to participate in my fantastic quiz? 
+        You can showcase your intelligence while still having a great time!
+         Prepare to put your knowledge to the test and have fun with your friends. 
+         Let's begin straight away.
+        Please wait , It takes a minute or less!
+        <ul>
+          <li>1.Quiz contains 20 questions </li>
+          <li>2.Each question has 20 seconds time afterwhichit automatically goes to next </li>
+          <li>3.Attend all the question</li>
+          <li>1.Quiz contains 20 questions </li>
+        </ul>
+        Loading...
+      </p>
+    </div>
+    <div id="contain">
+      <button id="start">Start Quiz!</button>
+
+      <div id="quiz" style="display: none;">
+        <div id="question"></div>
+        <div id="qImg"></div>
+        <div id="choices">
+          <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+          <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+          <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+          <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+        </div>
+        <div id="timer">
+          <div id="counter"></div>
+        </div>
+        <div id="progress"></div>
+      </div>
+      <div id="scoreContainer" style="display: none;"></div>
+    </div>
+    <footer>
+      Project by V S Rajeshwari
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
